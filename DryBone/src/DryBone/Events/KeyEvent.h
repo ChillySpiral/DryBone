@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace DryBone {
 
 	class DRY_BONE_API KeyEvent : public Event

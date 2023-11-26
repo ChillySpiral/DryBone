@@ -1,9 +1,7 @@
 #pragma once
-
+#include "../dbpch.h"
 #include "../DryBone/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace DryBone {
 

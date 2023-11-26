@@ -19,7 +19,7 @@
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DryBone</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>dbpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DRY_BONE_PLATFORM_WINDOWS;DRY_BONE_BUILD_DLL;DRY_BONE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -97,7 +98,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>dbpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DRY_BONE_PLATFORM_WINDOWS;DRY_BONE_BUILD_DLL;DRY_BONE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,7 +124,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>dbpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DRY_BONE_PLATFORM_WINDOWS;DRY_BONE_BUILD_DLL;DRY_BONE_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,19 +149,23 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\DryBone\Events\Event.h" />
-    <ClInclude Include="src\DryBone\Events\KeyEvent.h" />
-    <ClInclude Include="src\DryBone\Events\MouseEvent.h" />
     <ClInclude Include="src\DryBone.h" />
     <ClInclude Include="src\DryBone\Application.h" />
     <ClInclude Include="src\DryBone\Core.h" />
     <ClInclude Include="src\DryBone\EntryPoint.h" />
+    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\DryBone\Events\Event.h" />
+    <ClInclude Include="src\DryBone\Events\KeyEvent.h" />
+    <ClInclude Include="src\DryBone\Events\MouseEvent.h" />
     <ClInclude Include="src\DryBone\Log.h" />
+    <ClInclude Include="src\dbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DryBone\Application.cpp" />
     <ClCompile Include="src\DryBone\Log.cpp" />
+    <ClCompile Include="src\dbpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,6 +18,9 @@ project "DryBone"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 	
+	pchheader "dbpch.h"
+	pchsource "DryBone/src/dbpch.cpp"
+	
 	files
 	{
 		"%{prj.name}/src/**.h",

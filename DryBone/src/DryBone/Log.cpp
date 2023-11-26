@@ -1,3 +1,4 @@
+#include "dbpch.h"
 #include "Log.h"
 
 namespace DryBone

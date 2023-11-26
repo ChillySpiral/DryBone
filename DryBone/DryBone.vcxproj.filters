@@ -5,7 +5,7 @@
       <UniqueIdentifier>{1885D788-8464-5624-8D7C-E1FAF9DABC85}</UniqueIdentifier>
     </Filter>
     <Filter Include="DryBone\Events">
-      <UniqueIdentifier>{bf54c292-3426-445a-bef2-3e16e620114d}</UniqueIdentifier>
+      <UniqueIdentifier>{FC853176-E853-257C-D1E7-95A2BD5401E1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,13 +19,10 @@
     <ClInclude Include="src\DryBone\EntryPoint.h">
       <Filter>DryBone</Filter>
     </ClInclude>
-    <ClInclude Include="src\DryBone\Log.h">
-      <Filter>DryBone</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DryBone\Events\Event.h">
+    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h">
       <Filter>DryBone\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h">
+    <ClInclude Include="src\DryBone\Events\Event.h">
       <Filter>DryBone\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\DryBone\Events\KeyEvent.h">
@@ -34,6 +31,10 @@
     <ClInclude Include="src\DryBone\Events\MouseEvent.h">
       <Filter>DryBone\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\DryBone\Log.h">
+      <Filter>DryBone</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DryBone\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\DryBone\Log.cpp">
       <Filter>DryBone</Filter>
     </ClCompile>
+    <ClCompile Include="src\dbpch.cpp" />
   </ItemGroup>
 </Project>
