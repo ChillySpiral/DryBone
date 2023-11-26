@@ -7,6 +7,9 @@
     <Filter Include="DryBone\Events">
       <UniqueIdentifier>{FC853176-E853-257C-D1E7-95A2BD5401E1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DryBone.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\DryBone\Log.h">
       <Filter>DryBone</Filter>
     </ClInclude>
+    <ClInclude Include="src\DryBone\Window.h">
+      <Filter>DryBone</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\dbpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\DryBone\Log.cpp">
       <Filter>DryBone</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\dbpch.cpp" />
   </ItemGroup>

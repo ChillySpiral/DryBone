@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "DryBone/Log.h"
+
 #ifdef DRY_BONE_PLATFORM_WINDOWS
-#include <Windows.h>
+	#include <Windows.h>
 #endif

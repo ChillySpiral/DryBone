@@ -1,3 +1,6 @@
 [submodule "DryBone/vendor/spdlog"]
 	path = DryBone/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "DryBone/vendor/GLFW"]
+	path = DryBone/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

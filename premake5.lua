@@ -9,6 +9,12 @@ workspace "DryBone"
 	}
 	
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "DryBone/vendor/GLFW/include"
+
+include "DryBone/vendor/GLFW"
 	
 project "DryBone"
 	location "DryBone"
@@ -29,7 +35,15 @@ project "DryBone"
 	
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 	
 	filter "system:windows"
