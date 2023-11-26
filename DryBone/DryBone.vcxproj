@@ -146,6 +146,10 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\DryBone\Events\Event.h" />
+    <ClInclude Include="src\DryBone\Events\KeyEvent.h" />
+    <ClInclude Include="src\DryBone\Events\MouseEvent.h" />
     <ClInclude Include="src\DryBone.h" />
     <ClInclude Include="src\DryBone\Application.h" />
     <ClInclude Include="src\DryBone\Core.h" />

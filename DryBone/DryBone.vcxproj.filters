@@ -4,6 +4,9 @@
     <Filter Include="DryBone">
       <UniqueIdentifier>{1885D788-8464-5624-8D7C-E1FAF9DABC85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DryBone\Events">
+      <UniqueIdentifier>{bf54c292-3426-445a-bef2-3e16e620114d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DryBone.h" />
@@ -18,6 +21,18 @@
     </ClInclude>
     <ClInclude Include="src\DryBone\Log.h">
       <Filter>DryBone</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DryBone\Events\Event.h">
+      <Filter>DryBone\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DryBone\Events\ApplicationEvent.h">
+      <Filter>DryBone\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DryBone\Events\KeyEvent.h">
+      <Filter>DryBone\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DryBone\Events\MouseEvent.h">
+      <Filter>DryBone\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
