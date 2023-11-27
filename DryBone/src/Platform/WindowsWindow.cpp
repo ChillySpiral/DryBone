@@ -30,7 +30,6 @@ namespace DryBone {
 
 		if (!s_GLFWInitialized)
 		{
-			// TODO: glfwTerminate on system shutdown
 			int success = glfwInit();
 			DB_CORE_ASSERT(success, "Could not intialize GLFW!");
 
