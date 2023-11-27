@@ -1,4 +1,4 @@
-#include "../dbpch.h"
+#include "dbpch.h"
 #include "WindowsWindow.h"
 
 namespace DryBone {
